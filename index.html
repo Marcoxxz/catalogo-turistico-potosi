@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Gu&iacute;a Tur&iacute;stica de Potos&iacute; &mdash; Polic&iacute;a
-      Tur&iacute;stica
+      Ch’utillos 2026: Gu&iacute;a Turística | Polic&iacute;a Tur&iacute;stica
+      Potos&iacute;
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&family=Work+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/jpeg" href="assets/logo-policia-3.png" />
     <style>
       :root {
         --night: #16233f;
@@ -98,6 +99,13 @@
         width: 34px;
         height: 34px;
       }
+      .nav-logo {
+        height: 40px; /* Misma altura que el SVG original (viewBox 0 0 40 40) */
+        width: auto; /* Mantiene la proporción original del escudo */
+        object-fit: contain;
+        border-radius: 4px; /* Opcional: suaviza los bordes si la imagen es muy cuadrada */
+      }
+
       .nav-links {
         display: flex;
         gap: 22px;
@@ -672,12 +680,15 @@
       }
       .foot-brand {
         display: flex;
-        gap: 14px;
         align-items: center;
+        gap: 12px;
       }
-      .foot-brand svg {
-        width: 40px;
-        height: 40px;
+
+      .foot-logo {
+        height: 48px; /* Un poco más grande que el del menú para destacar en el pie de página */
+        width: auto;
+        object-fit: contain;
+        border-radius: 4px;
       }
       .foot-brand h4 {
         color: var(--parchment);
@@ -1035,28 +1046,23 @@
     <nav class="nav">
       <div class="wrap">
         <div class="nav-brand">
-          <svg viewBox="0 0 40 40" stroke="var(--gold)" fill="none">
-            <path
-              d="M20 3l14 6v9c0 10-6 16-14 19-8-3-14-9-14-19V9z"
-              stroke-width="1.6"
-            />
-            <path
-              d="M20 12v10M15 17h10"
-              stroke-width="1.6"
-              stroke-linecap="round"
-            />
-          </svg>
+          <!-- Imagen sustituida -->
+          <img
+            src="assets/Logo-turistico-3.png"
+            alt="Escudo Policía Turística"
+            class="nav-logo"
+          />
           Polic&iacute;a Tur&iacute;stica &middot; Potos&iacute;
         </div>
         <div class="nav-links">
           <a href="#chutillos" style="color: var(--gold)">Ch’utillos 2026</a>
-          <a href="#labor">Nuestra Labor</a>
           <a href="#rutas">Rutas</a>
           <a href="#museos">Museos</a>
           <a href="#alojamiento">Alojamiento</a>
           <a href="#gastronomia">Gastronom&iacute;a</a>
           <a href="#operadoras">Operadores</a>
           <a href="#seguridad">Seguridad</a>
+          <a href="#labor">Nuestra Labor</a>
         </div>
       </div>
     </nav>
@@ -4307,17 +4313,11 @@
       <div class="wrap">
         <div class="foot-grid">
           <div class="foot-brand">
-            <svg viewBox="0 0 40 40" stroke="var(--gold)" fill="none">
-              <path
-                d="M20 3l14 6v9c0 10-6 16-14 19-8-3-14-9-14-19V9z"
-                stroke-width="1.6"
-              />
-              <path
-                d="M20 12v10M15 17h10"
-                stroke-width="1.6"
-                stroke-linecap="round"
-              />
-            </svg>
+            <img
+              src="assets/logo-policia-3.png"
+              alt="Escudo Policía Turística"
+              class="foot-logo"
+            />
             <div>
               <h4>Comando Departamental de Polic&iacute;a Potos&iacute;</h4>
               <span>Unidad de Polic&iacute;a Tur&iacute;stica</span>
